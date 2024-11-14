@@ -1,0 +1,393 @@
+/* BROWSER RESET */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* GENERAL STYLING  */
+  h1 {
+    font-size: 4em;
+    font-weight: 800;
+    padding: 0.25em;
+    text-align: center;
+    background: black;
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.4);
+    margin: 0 4em;
+    border-radius: 1em;
+    color: white;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a {
+    display: block;
+  }
+  
+  /* SECTION 1 - HEADER */
+  header {
+    background-color: orange;
+    padding: 2em;
+
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(
+      0.25turn,
+      rgba(255, 249, 34),
+      rgba(255, 0, 128),
+      rgba(56, 2, 155, 0)
+    );
+    border-image-slice: 1;
+    width: 100%;
+  }
+  
+  /* Underline Animation */
+  .un {
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient(white 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0s 0.3s;
+  }
+  
+  .un:hover {
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+  }
+  
+  header button {
+    padding: 1em;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .un button {
+    background: none;
+  }
+  
+  /* SECTION 2 - HERO */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    list-style: none;
+    text-align: center;
+  }
+  
+  ul > li:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    gap: 2%;
+    order: 3;
+  }
+  
+  ul > li:nth-child(2) {
+    order: 1;
+  }
+  
+  ul > li:nth-child(3) {
+    order: 2;
+  }
+  
+  ul > li:nth-child(4) {
+    order: 4;
+  }
+  
+  ul > li:nth-child(5) {
+    order: 5;
+  }
+
+  /* SECTION 3 - ARTICLES */
+  section {
+    background-color: orange;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(
+      0.25turn,
+      rgba(255, 249, 34),
+      rgba(255, 0, 128),
+      rgba(56, 2, 155, 0)
+    );
+    border-image-slice: 1;
+    width: 100%;
+  }
+  
+  section p {
+    text-align: justify;
+  }
+  
+
+  #greece {
+    background-image: url("./Images/romanwall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8em;
+  }
+  
+  .card {
+    padding: 4em 0;
+    border-radius: 1em;
+    margin: 0 2em;
+    background-color: darkslategrey;
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 2%;
+    background: black;
+    margin: 4em;
+    border-radius: 1em;
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .figure2 {
+    flex-basis: 80%;
+    position: relative;
+    list-style: none;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: 8px solid orange;
+    border-radius: 0.75em;
+    margin: 4em 0;
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .figure2:hover {
+    transform: scale(1.1);
+    transition: transform 900ms;
+    cursor: pointer;
+  }
+  
+  .flex-container2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 8em;
+    gap: 5%;
+  }
+  
+  .flex-container2 img {
+    width: 100%;
+    border-radius: 0.25em;
+    min-width: 250px;
+  }
+  
+  .flex-container2 figure:nth-child(odd) {
+    border: 8px solid orange;
+    border-radius: 0.75em;
+    flex-basis: 30%;
+  }
+  
+  .flex-container2 figure:nth-child(2) {
+    border: 8px solid blue;
+    border-radius: 0.75em;
+    flex-basis: 30%;
+  }
+  
+  .flex-container2 figure:nth-child(4) {
+    border: 8px solid red;
+    border-radius: 0.75em;
+    flex-basis: 30%;
+  }
+  
+  .flex-container2 figure:nth-child(5) {
+    border: 8px solid green;
+    border-radius: 0.75em;
+    flex-basis: 30%;
+  }
+  
+  .flex-container2 figure:last-child {
+    border: 8px solid teal;
+    border-radius: 0.75em;
+    flex-basis: 30%;
+  }
+  
+  .flex-fig {
+    display: flex;
+    flex-basis: 20%;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    color: whitesmoke;
+    margin: 2em;
+    font-size: 1.2em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+  }
+  
+  .flex-fig:hover {
+    transform: scale(1.2);
+    transition: transform 900ms;
+    cursor: pointer;
+  }
+  
+  figcaption {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    padding: 1em;
+    opacity: 0.8;
+    background-color: whitesmoke;
+    color: black;
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+  }
+  
+  .flex-item {
+    flex-basis: 30%;
+    border-radius: 0.5em;
+    box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.4);
+  }
+
+  /* SECTION 3 - FOOTER */
+footer {
+    background-color: orange;
+    padding: 2em 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30%;
+    font-weight: 700;
+  }
+  
+  footer img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .footer-container p {
+    margin-bottom: 1em;
+  }
+  
+  .footer-container2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Tablet Breakpoint */
+@media (max-width: 1300px) {
+    main {
+      min-width: 20rem;
+      max-width: 50%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    section p {
+      text-justify: distribute;
+    }
+  
+    ul > li:first-child {
+      flex-basis: 100%;
+      order: 1;
+      margin-bottom: 1em;
+    }
+  
+    .tablet-pp > figure:nth-child(3) {
+      flex-basis: 85%;
+    }
+  
+    h1 {
+      margin: 0 1em;
+    }
+  }
+  
+  /* Phone Breakpoint */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 3em;
+    }
+  
+    footer {
+      flex-direction: column;
+      gap: 3em;
+    }
+  
+    ul > li:nth-child(2) {
+      flex-basis: 49%;
+      background: red;
+      margin-bottom: 0.25em;
+      border-radius: 0.25em;
+    }
+  
+    ul > li:nth-child(3) {
+      flex-basis: 49%;
+      background: red;
+      margin-bottom: 0.25em;
+      border-radius: 0.25em;
+    }
+  
+    ul > li:nth-child(4) {
+      flex-basis: 49%;
+      background: red;
+      border-radius: 0.25em;
+    }
+  
+    ul > li:nth-child(5) {
+      flex-basis: 49%;
+      background: red;
+      border-radius: 0.25em;
+    }
+  
+    button {
+      padding: 0.5em 4em;
+      border: none;
+    }
+  
+    #greece {
+      padding: 8em 0;
+    }
+  
+    #rome {
+      padding: 8em 0;
+    }
+  
+    #medieval {
+      padding: 8em 0;
+    }
+  
+    .quiz {
+      padding: 8em 0;
+    }
+  
+    .quiz p {
+      margin: 2em 4em;
+    }
+  
+    .un {
+      background-image: linear-gradient(red 0 0);
+    }
+  }  

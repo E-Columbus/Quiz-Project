@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./Images/Acropolis.png">
+    <title>Philosophy Quiz</title>
+</head>
+<body>
+
+    <div class="confetti-container">
+        <div class="conf1"></div>
+        <div class="conf2"></div>
+        <div class="conf3"></div>
+        <div class="conf4"></div>
+        <div class="conf5"></div>
+        <div class="conf6"></div>
+        <div class="conf7"></div>
+        <div class="conf8"></div>
+        <div class="conf9"></div>
+        <div class="conf10"></div>
+        <div class="conf11"></div>
+        <div class="conf12"></div>
+        <div class="conf13"></div>
+        <div class="conf14"></div>
+        <div class="conf15"></div>
+        <div class="conf16"></div>
+        <div class="conf17"></div>
+        <div class="conf18"></div>
+        <div class="conf19"></div>
+    </div>
+
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><img src="./Images/Phi.png" width="50px" height="50px"></li>
+                <li><a href="#greece" class="un"><button>Greece</button></a></li>
+                <li><a href="#rome" class="un"><button>Rome</button></a></li>
+                <li><a href="#medieval" class="un"><button>Middle Ages</button></a></li>
+                <li><a href="#colonial" class="un"><button>Colonial Age</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <canvas id="c"></canvas>
+
+    <div id="quiz">   
+        <h1>Philosophy Quiz</h1>
+        <p>Quiz time! Besides being a frontend developer, I am also well-versed in metaphysical Philosophy and merged both worlds here. Down below you shall find everything you need in my integral History of Philosophy, broken down in different time periods. Will you dare complete my quiz and get a perfect score?</p>
+        <main>
+          <div id="statement">Is the content more important than the way things are said?</div>
+          
+          <div id="options">
+            <button class="b" name="true" value="true">true</button>
+            <button class="b" name="false" value="false">false</button>
+          </div>
+            <button class="b" name="next" onclick="clickFunc()">Next Question</button>
+            <div id="explanation"></div>
+            <label id="lblScore"></label>
+        </main>  
+    </div>
+
+    <section id="greece">
+        <div class="card">
+            <h1>Ancient Greece</h1>
+            <div class="flex-container">
+                <figure class="flex-fig">
+                    <a href="#nav"><img src="./Images/Acropolis.png" class="logo" width="100px" height="100px"></a>
+                </figure>
+                <p>The birthplace of western civilization, from math to logic, those are some of the defining discoveries of this initial time period. But more importantly being self-aware of the existance of consiousness and a metaphysically objective definition of reality in which entities had an external existence to our mental perceptions. Metaphysical realism would guide the world until the colonial/modern age, which only reaffirms how important it was for humanity.(470bc - 322bc)</p>
+            </div>
+
+            <div class="flex-container2">
+                <figure class="flex-fig">
+                    <img src="./Images/socrates-gettyimages-51242028.jpg" class="flex-item"/>
+                    <figcaption>
+                        <h2>Socrates</h2>
+                        <a href="./socrates.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <figure class="flex-fig">
+                    <img src="./Images/gettyimages-113631148.jpg" class="flex-item"/>
+                    <figcaption>
+                        <h2>Plato</h2>
+                        <a href="./plato.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <figure class="flex-fig">
+                    <img src="./Images/aristotle-portrait-zeichnung.jpg" class="flex-item"/>
+                    <figcaption>
+                        <h2>Aristotle</h2>
+                        <a href="./aristotle.html">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="rome">
+        <div class="card">
+        <h1>Rome</h1>
+        <div class="flex-container">
+            <figure class="flex-fig">
+                <a href="#nav"><img src="./Images/SPQR.png" class="logo" width="150px" height="100px"></a>
+            </figure>
+            <p>While Greece was the spirit of western culture, Rome was the body responsible for carrying it to civilize the world. The eternal city, its very name immediatly conjures images of steely eyed legionares wearing centurion helmets in our minds even after 2500 years.<br/><br/> 
+                
+            Being the cradle of western civilization and prosperity responsible for our western culture, of course Rome contributed to metaphysical philosophy in many ways, its transition from the Greek pantheon of gods to Christianity as well as nurturing society with exemplary moral values even today are first-class standards. Its fall is still considered one of the great tragedies of History that sparked the beginning of the barbaric Dark Ages (753bc - 476ad)</p>
+        </div>
+
+        <div class="flex-container2">
+            <div class="flex-fig">
+                <img src="./Images/1_DQ4ymJtwiHTQLD0qSwX9ZA.png" class="Featured-Print-Image"/>
+                <figcaption>
+                    <h2>Marcus Aurelius</h2>
+                    <a href="./aurelius.html">Read More</a>
+                </figcaption>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="medieval">
+        <div class="card">
+            <h1>Middle Ages</h1>  
+            <div class="flex-container">
+                <figure class="flex-fig">
+                    <a href="#nav"><img src="./Images/helmet-knight.svg" class="logo" width="150px" height="100px"></a>
+                </figure>
+                <p>Medieval knights mounting armored horses, christian crusades and princesses living in majestic castles serving their king. After the tragic fall of Rome it would take years to assimilate the advances that had been lost in the repeated lootings of the eternal city. Without a centralized authority most feudal lords would lock themselves up in their own kingdoms and merely protect those around them and serfs who would pay them tribute in exchange for protection.
+                    
+                For those unfortunate who lived outside city walls their property was all up for grabs since the same savage germanic tribes that had been responsible for destroying Rome were still roaming free, however even when locked up in their monasteries, medieval monks were still able to put the pieces of the puzzle back together and revive the long lost metaphysical realism stronger than ever before (476ad - 1492ad)</p>
+            </div>
+
+            <div class="flex-container2">
+                <figure class="flex-fig"> 
+                    <img src="./Images/Saint Agustine.jpg" class="flex-item"/>
+                    <figcaption>
+                        <h2>Saint Augustine</h2>
+                        <a href="./augustine.html">Read More</a>
+                    </figcaption>
+                </figure> 
+                <figure class="flex-fig">
+                    <img src="./Images/Anselm of Canterbury.jpg" class="flex-item"/>
+                    <figcaption>
+                        <h2>Anselm of Canterbury</h2>
+                        <a href="./canterbury.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <figure class="flex-fig">
+                    <img src="./Images/Thomas Aquinas.jpg" class="flex-item"/>
+                    <figcaption>
+                        <h2>Thomas Aquinas</h2>
+                        <a href="./thomas.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <figure class="flex-fig">
+                    <img src="./Images/William of Ockham.png" class="flex-item"/>
+                    <figcaption>
+                        <h2>William of Ockham</h2>
+                        <a href="./ockham.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <figure class="flex-fig">
+                    <img src="./Images/John Duns Scotus.jpg" class="flex-item"/>
+                    <figcaption>
+                        <h2>Duns Scotus</h2>
+                        <a href="./scotus.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <figure class="flex-fig">
+                    <img src="./Images/Roger Bacon.jpg" class="flex-item"/>
+                    <figcaption>
+                        <h2>Roger Bacon</h2>
+                        <a href="./bacon.html">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+    </section>
+
+    <section id="colonial">
+        <div class="card">
+            <h1>Colonial Age</h1>  
+            <div class="flex-container">
+                <figure class="flex-fig">
+                    <a href="#nav"><img src="./Images/Hat.png" class="logo" width="150px" height="100px"></a>
+                </figure>
+                <p>God replaced by kings, then kings replaced by a burgeois class, then those same wealthy merchants executed by the population, a period of neverending volition without ever reaching the stability of medieval times or the pax romana, events like the French revolution still evoke an immediate feeling of instability for example, but why exactly this instability happened in the first place?.<br/><br/>
+                    
+                The last time period, also called Modern Age, basically lasts from the discovery of the Americas up until the beginning of World War I. At its dawn we can find the most prominent reason responsible for today's attitudes towards life of individuals: The protestant reformation, its unforseen consecuences even for the authors behind it at the time gave birth to metaphysical relativism, nihilism, hedonism and a myriad of morally questionable decisions by lots of modern day authors in hindsight.<br/><br/>
+
+                But if there's one thing we learned in this journey so far is that metaphysical philosophy is the core reason that much later triggers these historical events. (1492ad - 1914ad)
+                </p>
+            </div>
+
+            <div class="Grid-container">
+                <!-- 1st Row - 2 -->
+                <figure class="First-Row-a flex-fig">
+                    <img src="./Images/kant.jpg" class="flex-item">
+                    <figcaption>
+                        <h2>Immanuel Kant</h2>
+                        <a href="./kant.html">Read More</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="First-Row-b flex-fig">
+                    <img src="./Images/Nietzsche.jpg"  class="flex-item">
+                    <figcaption>
+                        <h2>Nietzsche</h2>
+                        <a href="./nietzsche.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <!-- 2nd Row - 2 -->
+                <figure class="Second-Row-a flex-fig">
+                    <img src="./Images/Hume.jpg" class="flex-item">
+                    <figcaption>
+                        <h2>David Hume</h2>
+                        <a href="./hume.html">Read More</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="Second-Row-b flex-fig">
+                    <img src="./Images/Locke.jpg" class="flex-item">
+                    <figcaption>
+                        <h2>John Locke</h2>
+                        <a href="./locke.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <!-- 3rd Row - 4 -->
+                <figure class="Third-Row-a flex-fig">
+                    <img src="./Images/Voltair.webp" class="flex-item">
+                    <figcaption>
+                        <h2>Voltair</h2>
+                        <a href="./Voltair.html">Read More</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="Third-Row-b flex-fig">
+                    <img src="./Images/Descartes.jpg" class="flex-item">
+                    <figcaption>
+                        <h2>Descartes</h2>
+                        <a href="./Descartes.html">Read More</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="Third-Row-c flex-fig">
+                    <img src="./Images/kierkegaard.jpg" class="flex-item">
+                    <figcaption>
+                        <h2>kierkegaard</h2>
+                        <a href="./kierkegaard.html">Read More</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="Third-Row-d flex-fig">
+                    <img src="./Images/Mill.jpg" class="flex-item">
+                    <figcaption>
+                        <h2>Stuart Mill</h2>
+                        <a href="./mill.html">Read More</a>
+                    </figcaption>
+                </figure>
+                <!-- 4th Row - 1 -->
+                <figure class="Fourth-Row-a flex-fig">
+                    <img src="./Images/schopenhauer.jpg" class="flex-item">
+                    <figcaption>
+                        <h2>Schopenhauer</h2>
+                        <a href="./schopenhauer.html">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Stay Connected</p>
+            <a href="https://github.com/E-Columbus">
+                <img src="./Images/github.svg">
+            </a>
+            <a href="https://ar.linkedin.com/in/emir-christian-c-6733091b8">
+                <img src="./Images/linkedin.svg">
+            </a>
+        </div>
+        <div class="footer-container2">
+            <p>Philosophy Quiz</p>
+            <p>Emir Colombo</p>
+            <p>About</p>
+            <p>BA City</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
